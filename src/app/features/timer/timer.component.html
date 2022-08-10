@@ -1,8 +1,11 @@
 <section class="timer-container">
   <div class="timer" *ngIf="timer$ | async as timer">
     <app-timer-block [value]="timer.days" name="DNI"></app-timer-block>
+    <span class="timer-block-separator">:</span>
     <app-timer-block [value]="timer.hours" name="GODZINY"></app-timer-block>
+    <span class="timer-block-separator">:</span>
     <app-timer-block [value]="timer.minutes" name="MINUTY"></app-timer-block>
+    <span class="timer-block-separator">:</span>
     <app-timer-block [value]="timer.seconds" name="SEKUNDY"></app-timer-block>
   </div>
 </section>
