@@ -8,7 +8,11 @@ import { TimerModule } from './features/timer/timer.module';
 const routes: Routes = [];
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, RouterModule.forRoot(routes), TimerModule],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes, { useHash: true }),
+    TimerModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
