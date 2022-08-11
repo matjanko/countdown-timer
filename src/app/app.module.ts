@@ -15,11 +15,7 @@ const routes: Routes = [
 ];
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes, { useHash: true }),
-    TimerModule,
-  ],
+  imports: [BrowserModule, RouterModule.forRoot(routes), TimerModule],
   providers: [],
   bootstrap: [AppComponent],
 })
