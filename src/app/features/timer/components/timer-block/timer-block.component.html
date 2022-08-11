@@ -1,2 +1,13 @@
-<div class="block value-block"><label>{{ value | number: '2.0-0'}}</label></div>
-<div class="block name-block"><label>{{ name }}</label></div>
+<div class="block-container">
+  <div>
+    <div class="block value-block">
+      <label>{{ value | number: '2.0-0'}}</label>
+    </div>
+    <div class="block name-block">
+      <label>{{ name }}</label>
+    </div>
+  </div>
+  <div *ngIf="showSeparator">
+    <div class="separator-block"><label>:</label></div>
+  </div>
+</div>

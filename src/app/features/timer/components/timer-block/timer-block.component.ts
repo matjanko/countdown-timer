@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TimerBlockComponent implements OnInit {
   @Input() value!: number;
   @Input() name!: string;
+  @Input() showSeparator: boolean = true;
 
   constructor() {}
 
