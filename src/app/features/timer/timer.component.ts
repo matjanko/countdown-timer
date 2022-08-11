@@ -22,7 +22,7 @@ export class TimerComponent implements OnInit {
       .pipe(map((params) => params['date']))
       .subscribe((date) => {
         const targetDate = new Date(date);
-        this.timer$ = timer(0, 1000).pipe(
+        this.timer$ = timer(0, 100).pipe(
           mergeMap(() => this.timerService.calculateRemainingTime(targetDate))
         );
       });
